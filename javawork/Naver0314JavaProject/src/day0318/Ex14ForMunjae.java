@@ -13,13 +13,19 @@ public class Ex14ForMunjae {
 		for(int i=1; i<=5; i++) {
 			System.out.println("점수는 ?");
 			score = sc.nextInt();
-			count +=1;
-			if(score >100)
-			{
-				count -=1;
-				continue;
+			//Type 1
+//			if(score >100||score<1)
+//			{
+//				count -=1;
+//				continue;
+//			}
+//			sum += score;
+			
+			//Type 2
+			if(score<=100&&score>=1) {
+				count++;
+				sum += score;
 			}
-			sum += score;
 		}
 		System.out.printf("입력한 점수 갯수 : %d\n", count);
 		System.out.printf("총 합계 : %d", sum);
