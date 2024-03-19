@@ -27,6 +27,11 @@ public class Ex14ForMunjae {
 				count++;
 				sum += score;
 			}
+			//Type3
+//			if(score<1||score>100)
+//				continue;
+//			count++;
+//			sum += score;
 		}
 		System.out.printf("입력한 점수 갯수 : %d\n", count);
 		System.out.printf("총 합계 : %d", sum);
