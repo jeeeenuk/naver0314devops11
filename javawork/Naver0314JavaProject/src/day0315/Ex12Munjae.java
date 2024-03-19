@@ -24,5 +24,6 @@ public class Ex12Munjae {
 				score>=80?"수고했어요!":
 					score>=70?"조금 더 노력하세요!":"재시험입니다!";
 		System.out.println(score+" => "+msg);
+		sc.close();
 	}
 }

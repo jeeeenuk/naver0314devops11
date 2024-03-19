@@ -25,5 +25,6 @@ public class Ex11Operator {
 		
 		max = su1>su2&&su1>su3?su1:su2>su1&&su2>su3?su2:su3;
 		System.out.println("Max = "+max);
+		sc.close();
 	}
 }

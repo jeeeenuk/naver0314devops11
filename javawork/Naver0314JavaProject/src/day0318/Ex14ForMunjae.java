@@ -13,10 +13,11 @@ public class Ex14ForMunjae {
 		for(int i=1; i<=5; i++) {
 			System.out.println("점수는 ?");
 			score = sc.nextInt();
+			
 			//Type 1
 //			if(score >100||score<1)
 //			{
-//				count -=1;
+//				count--;
 //				continue;
 //			}
 //			sum += score;
