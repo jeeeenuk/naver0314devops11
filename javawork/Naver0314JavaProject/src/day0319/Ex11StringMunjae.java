@@ -21,7 +21,9 @@ public class Ex11StringMunjae {
 		int large=0, small=0, num=0;
 		System.out.println("대문자, 소문자, 숫자를 포함하여 입력하시오");
 		msg = sc.nextLine();
+		
 		for(int i=0;i<msg.length();i++) {
+//			char ch = msg.charAt(i);		
 			if (msg.charAt(i)>='A' && msg.charAt(i)<='Z') large++;
 			else if (msg.charAt(i)>='a' && msg.charAt(i)<='z') small++;
 			else if (msg.charAt(i)>='0' && msg.charAt(i)<='9') num++;
