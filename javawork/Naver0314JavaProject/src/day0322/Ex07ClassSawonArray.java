@@ -38,6 +38,7 @@ public class Ex07ClassSawonArray {
         System.out.print("직원 인원수는? : ");
         inwon = Integer.parseInt(sc.nextLine());
         sawon = new Sawon[inwon]; //인원 수 만큼 메모리 할당, 초기값은 null
+        //Sawon []sawon = new Sawon[inwon];
 
         inputSawonArray(sawon);
         outputSawonArray(sawon);

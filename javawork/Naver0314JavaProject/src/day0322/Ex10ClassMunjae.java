@@ -6,13 +6,17 @@ class Member {
 
     //생성자
     Member(){
+        this ("*","*","*");
     }
     Member(String name){
-        this.name = name;
+        //this.name = name;
+        //this (name,"","");
+        this (); //name 에 아무 값도 들어가지 않기 때문에 생성자 본인이 출력된다.
     }
     Member(String name, String hp){
-        this.name = name;
-        this.hp = hp;
+//        this.name = name;
+//        this.hp = hp;
+        this (name, hp, "*");
     }
     Member(String name, String hp, String addr){
         this.name = name;
@@ -39,10 +43,10 @@ public class Ex10ClassMunjae {
         Member m3 = new Member("손흥민","010-2222-3333");
         Member m4 = new Member("Candy","010-444-5555","제주도");
 
-        System.out.println("** 멤버 명단 출력 **");
+        System.out.println("-- 멤버 명단 출력 --");
         writeMember(m1); writeMember(m2); writeMember(m3); writeMember(m4);
 
-        System.out.println("** m1 멤버의 값 변경하기 **");
+        System.out.println("-- m1 멤버의 값 변경하기 --");
         m1.setName("이영자");
         m1.setHp("011-2323-6767");
         m1.setAddr("부산");

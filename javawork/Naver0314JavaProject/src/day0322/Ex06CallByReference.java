@@ -6,10 +6,10 @@ class Stu{
     int age=6;
 }
 public class Ex06CallByReference {
-    public static void changeStu(Stu s) {
+    public static void changeStu(Stu a) {
         //주소를 통해서 main 의 s 변수의 값을 직접 변경
-        s.age=28;
-        s.blood="B";
+        a.age = 28;
+        a.blood = "B";
     }
     public static void main(String[] args) {
         Stu s=new Stu();
