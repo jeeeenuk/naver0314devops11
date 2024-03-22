@@ -7,7 +7,7 @@ public class Book199_9 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int []student = new int[0];
-        int sum=0;
+        int sum=0, num=0;
         Exit:
         while (true){
             System.out.println("-".repeat(47));
@@ -20,7 +20,7 @@ public class Book199_9 {
                     System.out.printf("선택> %d\n", choose);
                     System.out.print("학생수> ");
                     student = new int[Integer.parseInt(sc.nextLine())];
-                    System.out.println(Arrays.toString(student));
+                    //System.out.println(Arrays.toString(student));
                     break;
                 }
                 case 2:{
@@ -40,11 +40,19 @@ public class Book199_9 {
                 }
                 case 4:{
                     System.out.printf("선택> %d\n", choose);
-                    int max = Arrays.stream(student).max().getAsInt();
+                    //방법 1
+//                    int max = Arrays.stream(student).max().getAsInt();
+//                    System.out.printf("최고 점수 : %d\n",max);
+                    //방법 2
+                    num = student[0];
+                    for (int i = 0; i < student.length; i++) {
+                        if (num<student[i]) num=student[i];
+                    }
+                    System.out.printf("최고 점수 : %d\n",num);
+
                     for (int j : student) {
                         sum += j;
                     }
-                    System.out.printf("최고 점수 : %d\n",max);
                     System.out.printf("평균 점수 : %.1f\n",(double)sum/ student.length);
                     break;
                 }
