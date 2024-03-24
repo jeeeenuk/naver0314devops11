@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class BankApplication {
     private static final Account[] accountArray = new Account[100]; // 길이 100 account 배열 생성.
-    //Account 배열에서 accountNum 동일한 Account 객체 찾기 ..
+    //Account 배열에서 accountNum 과 동일한 Account 객체 찾기 ..
     private static Account findAccount(String accountNum){
         Account account = null;
         for (int i = 0; i < accountArray.length; i++) {                     // 0 부터 accountArray 의 길이만큼 반복
@@ -41,9 +41,9 @@ public class BankApplication {
                     String accountName = sc.nextLine();
 
                     System.out.print("초기입금액: ");
-                    int DepositAmount = Integer.parseInt(sc.nextLine());
+                    int depositAmount = Integer.parseInt(sc.nextLine());
                     
-                    Account account = new Account(accountNum, accountName, DepositAmount);
+                    Account account = new Account(accountNum, accountName, depositAmount);
 
                     for (int i = 0; i < accountArray.length; i++) {
                         if (accountArray[i] == null){
