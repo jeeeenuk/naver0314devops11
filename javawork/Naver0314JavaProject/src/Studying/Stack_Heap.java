@@ -12,14 +12,14 @@ public class Stack_Heap {
         fruits.add("Orange"); // Heap 에 Orange 이 할당
         fruits.add("Watermelon"); // Heap 에 Watermelon 이 할당
 
-        System.out.println(fruits);
+        System.out.println(fruits); // Apple, Orange, Watermelon
         change(fruits);
-        System.out.println(fruits);
+        System.out.println(fruits); // Apple, Orange, Lemon
     }
 
     public static void change(List<String> list){
         String myFruit = list.get(0);
-        System.out.println("Change : "+ myFruit);
+        System.out.println("Change : "+ myFruit); //Apple
         list.add("Lemon");
     }
 }
