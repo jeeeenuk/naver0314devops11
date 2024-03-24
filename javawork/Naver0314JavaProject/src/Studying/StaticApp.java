@@ -32,5 +32,7 @@ public class StaticApp {
         f1.instanceVar = "changed by f1";
         System.out.println(f1.instanceVar); //changed by f1
         System.out.println(f2.instanceVar); // I instance var
+
+        //static 은 class 소속 static 이 없느 것은 instance 소속이다...
     }
 }

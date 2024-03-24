@@ -24,7 +24,7 @@ public class BankApplication {
         while(true){
             System.out.println("-".repeat(43));
             System.out.println("1.계좌생성 | 2.계좌목록 | 3.예금 | 4.출금 | 5.종료");
-            System.out.println("-".repeat(53));
+            System.out.println("-".repeat(43));
             System.out.print("선택> ");
             int selectNum = Integer.parseInt(sc.nextLine());
 
@@ -82,7 +82,7 @@ public class BankApplication {
                     Account account = findAccount(accountNum);
 
                     if (account == null){
-                        System.out.println("결과: 계좌가 존재하지 않습니다.");
+                        System.out.println("존재하지 않는 계좌번호 입니다.");
                         break;
                     }
 
@@ -104,7 +104,7 @@ public class BankApplication {
                     Account account = findAccount(accountNum);
 
                     if (account == null){
-                        System.out.println("결과: 계좌가 존재하지 않습니다.");
+                        System.out.println("존재하지 않는 계좌번호 입니다.");
                         break;
                     }
 
