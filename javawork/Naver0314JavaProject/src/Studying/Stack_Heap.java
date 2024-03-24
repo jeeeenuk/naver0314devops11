@@ -5,18 +5,21 @@ import java.util.List;
 
 public class Stack_Heap {
     public static void main(String[] args) {
-        int age = 20;
-        String name = "WOOK";
-        List<String> fruit = new ArrayList<>();
-        fruit.add("Apple");
-        fruit.add("Orange");
-        fruit.add("Watermelon");
+        int age = 20; //Stack 에 변수명(age)와 변수(20) 모두가 할당된다.
+        String name = "WOOK"; //Stack 에 변수명(name), Heap 에 변수(WOOK)이 할당된다.
+        List<String> fruits = new ArrayList<>(); //Stack 에 fruits 라는 변수명이 할당, Heap 에는 할당되지 않는다.
+        fruits.add("Apple"); // Heap 에 Apple 이 할당
+        fruits.add("Orange"); // Heap 에 Orange 이 할당
+        fruits.add("Watermelon"); // Heap 에 Watermelon 이 할당
 
-        change(fruit);
+        System.out.println(fruits);
+        change(fruits);
+        System.out.println(fruits);
     }
 
     public static void change(List<String> list){
         String myFruit = list.get(0);
+        System.out.println("Change : "+ myFruit);
         list.add("Lemon");
     }
 }
