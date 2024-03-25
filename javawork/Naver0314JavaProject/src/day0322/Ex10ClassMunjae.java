@@ -11,7 +11,7 @@ class Member {
     Member(String name){
         //this.name = name;
         //this (name,"","");
-        this (); // 아무 값도 들어가지 않기 때문에 생성자 본인이 출력된다.
+        this (); // 아무 값도 들어가지 않기 때문에 생성자 본인이 출력
     }
     Member(String name, String hp){
 //        this.name = name;
