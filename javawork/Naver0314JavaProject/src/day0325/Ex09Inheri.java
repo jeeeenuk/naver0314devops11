@@ -43,7 +43,8 @@ public class Ex09Inheri {
             Override method 에 한해서만 호출이 가능
             writeAnimal method 는 호출이 가능하지만, play method 는 호출할 수 없다.
          */
-        Animal animal = null;
+//        Animal animal = null;
+        Animal animal = new Animal();
         animal = new Cat();
         animal.writeAnimal();
 //        animal.play(); // Error

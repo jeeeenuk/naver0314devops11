@@ -18,16 +18,20 @@ class Cat2 extends Animal2{
     }
 }
 public class Ex11Book328 {
-    public static void animalSound(Animal2 animal2){
-        animal2.sound();
-    }
     public static void main(String[] args) {
         Dog2 dog2 = new Dog2();
         dog2.sound();
         Cat2 cat2 = new Cat2();
         cat2.sound();
 
-        animalSound(new Dog2());
-        animalSound(new Cat2());
+        animalSound(new Dog2()); //멍멍
+        animalSound(new Cat2()); //야옹
+        animalBreath(new Dog2()); //숨을 쉽니다..
+    }
+    public static void animalSound(Animal2 animal2){
+        animal2.sound();
+    }
+    public static void animalBreath(Animal2 animal2){
+        animal2.breathe();
     }
 }
