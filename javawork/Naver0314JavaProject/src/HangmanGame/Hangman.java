@@ -4,6 +4,11 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Hangman {
+    public static void answerPrint(String answer, int answerNum){
+        for (int i = 0; i < answerNum; i++) {
+            System.out.print("_");
+        }
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Random random = new Random();
@@ -16,14 +21,6 @@ public class Hangman {
         System.out.println(answer); //정답
         //System.out.println(answerNum); //정답의 갯수
 
-        for (int i = 0; i < answerNum; i++) {
-            System.out.print("_");
-        }
-
-        while (true){
-            System.out.print("");
-            String inPut = sc.nextLine();
-
-        }
+        answerPrint(answer,answerNum);
     }
 }

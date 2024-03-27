@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-public class Ex01Set {
+public class Ex01SetInteger {
     public static void main(String[] args) {
         //<Integer> : 제네릭, 해당 컬렉션에는 Integer 타입만 할당이 가능하다. 다른 타입을 할당할 경우 컴파일 오류가 발생한다.
         Set<Integer> set1 = new HashSet<>(); //뒷부분 제네릭, 즉 꺽쇠 <>는 생략이 가능하다.
