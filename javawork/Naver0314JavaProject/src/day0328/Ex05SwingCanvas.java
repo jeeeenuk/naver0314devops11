@@ -3,9 +3,9 @@ package day0328;
 import javax.swing.*;
 import java.awt.*;
 
-public class SwingCanvas extends JFrame {
+public class Ex05SwingCanvas extends JFrame {
     myDraw draw = new myDraw();
-    public SwingCanvas(String title){
+    public Ex05SwingCanvas(String title){
         super(title);
         this.setLocation(100, 100);
         this.setSize(500, 500);
@@ -52,6 +52,6 @@ public class SwingCanvas extends JFrame {
         this.add("Center",draw);
     }
     public static void main(String[] args) {
-        SwingCanvas a = new SwingCanvas("Swing Canvas");
+        Ex05SwingCanvas a = new Ex05SwingCanvas("Swing Canvas");
     }
 }
