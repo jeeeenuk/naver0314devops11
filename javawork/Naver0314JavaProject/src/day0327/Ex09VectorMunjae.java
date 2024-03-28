@@ -24,7 +24,7 @@ public class Ex09VectorMunjae {
         FileReader fileReader = new FileReader(PATH);
         BufferedReader bufferedReader = new BufferedReader(fileReader);
         String line;
-        while ((line=bufferedReader.readLine()) != null){
+        while ((line = bufferedReader.readLine()) != null){
             String []a = line.split(",");
             StudentDto studentDto = new StudentDto();
             studentDto.setName(a[0]);
@@ -151,7 +151,7 @@ public class Ex09VectorMunjae {
                         System.out.print("잘못 입력 하였습니다.");
                 }
             } catch (IllegalArgumentException e){
-                System.out.println("잘못입력하셨습니다.");
+                System.out.println("잘못 입력 하셨습니다.");
             }
             System.out.println();
         }
